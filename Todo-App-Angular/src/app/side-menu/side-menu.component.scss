@@ -1,0 +1,13 @@
+.title{
+    font-weight: 500;
+    font-size: larger;
+}
+.button-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+.button-list app-sidebar-button{
+    width: 100%;
+}

@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let sidebarButton of sidebarButtons">
+            <a routerLink="/{{sidebarButton.name | lowercase}}"  >
+                <mat-icon aria-hidden="false" aria-label="home">{{sidebarButton.icon_name}}</mat-icon>
+                {{sidebarButton.name}}
+            </a>
+    </li>
+</ul>

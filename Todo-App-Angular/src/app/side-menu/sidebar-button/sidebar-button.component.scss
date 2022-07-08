@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: black;
+}
+
+ul mat-icon{
+    margin-bottom: -5px;
+    margin-right: 20px;
+}
+
+
+
