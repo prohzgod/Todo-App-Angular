@@ -15,14 +15,14 @@ a{
 a:hover{
     color: black;
 }
-a:active{
-    color: black;
-}
 
 ul mat-icon{
     margin-bottom: -5px;
     margin-right: 20px;
 }
 
-
+.active {
+    border-right: 3px solid green;
+    color: black;
+}
 
