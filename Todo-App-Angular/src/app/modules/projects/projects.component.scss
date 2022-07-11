@@ -1,3 +1,17 @@
+@import '../../styles/colors';
+
 .container{
-    margin: 10px;
+    margin: 15px;
+    .title{
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .todo-lists{
+        margin-top: 2em;
+        app-todo-list{
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
+
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { sidebar_button } from 'src/sidebar_button';
-import { SIDEBAR_BUTTON } from 'src/mock_data';
+import { sidebar_button } from 'src/app/interface/sidebar_button';
+import { SIDEBAR_BUTTON } from 'src/app/mock-data/mock-data';
 import { Observable,of } from 'rxjs';
 
 @Injectable({

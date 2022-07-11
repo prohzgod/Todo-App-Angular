@@ -1,0 +1,29 @@
+@import "../../../styles/colors";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mat-form-field {
+        mat-icon {
+            color: $text;
+            margin-right: 5px;
+            margin-bottom: -5px;
+        }
+        input {
+            border: 0 solid transparent;
+            height: 20px;
+            font-size: $text-size;
+        }
+    }
+    .noti{
+        margin: 0 5px 0 0;
+        color: $text;
+
+    }
+    .avatar{
+        background-color: aqua;
+        font-size: $text-size;
+        
+    }
+}

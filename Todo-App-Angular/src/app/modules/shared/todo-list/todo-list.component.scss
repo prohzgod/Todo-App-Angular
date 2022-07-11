@@ -1,0 +1,28 @@
+@import "../../../styles/colors";
+
+.todo {
+  background: $card-prime;
+  height: 500px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  padding: 10px 20px;
+  margin: 0 30px;
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-size: $text-size;
+      font-weight: 500;
+    }
+    .numberOftodo{
+        background-color: lightblue;
+        width: 20px;
+        height: 20px;
+        
+    }
+  }
+}

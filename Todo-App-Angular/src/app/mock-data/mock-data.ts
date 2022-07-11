@@ -1,4 +1,4 @@
-import { sidebar_button } from "./sidebar_button";
+import { sidebar_button } from "../interface/sidebar_button";
 
 export const SIDEBAR_BUTTON: sidebar_button[] = [
     { id: 1, icon_name: 'home', name: 'Overview' },
