@@ -34,6 +34,9 @@ $Todo-App-Angular-theme: mat.define-light-theme((
 @include mat.all-component-themes($Todo-App-Angular-theme);
 
 /* You can add global styles to this file, and also import other style files */
-
+*{
+  margin:0;
+  padding:0;
+}
 html, body { height: 100%; }
 body { margin: 0 2em 0 2em; font-family: Roboto, "Helvetica Neue", sans-serif; }

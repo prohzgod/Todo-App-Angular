@@ -2,7 +2,7 @@
 
 .container{
     margin: 15px;
-    .title{
+    span{
         font-size: x-large;
         font-weight: 500;
     }
@@ -10,7 +10,7 @@
         margin-top: 2em;
         app-todo-list{
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row;
         }
     }
 

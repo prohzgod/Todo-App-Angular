@@ -1,0 +1,18 @@
+@import '../../../styles/colors';
+
+button{
+    background-color: $card-todo;
+    color: black;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px;
+    cursor: pointer;
+    p{
+        text-align: start;
+    }
+}
+button:hover{
+    background-color: $card-todo-hover;
+}

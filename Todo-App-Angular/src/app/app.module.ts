@@ -14,9 +14,11 @@ import { OverviewComponent } from './modules/overview/overview.component';
 import { HeaderComponent } from './modules/shared/header/header.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {DragDropModule} from '@angular/cdk/drag-drop';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TodoListComponent } from './modules/shared/todo-list/todo-list.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { TodoComponent } from './modules/shared/todo/todo.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     OverviewComponent,
     HeaderComponent,
     TodoListComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatInputModule,
     DragDropModule,
     MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,28 +1,96 @@
 @import "../../../styles/colors";
 
-.todo {
+mat-card {
   background: $card-prime;
-  height: 500px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  height: fit-content;
+  border-radius: 4px;
+  flex-basis: 200px;
   flex-grow: 1;
   flex-wrap: wrap;
   flex-shrink: 1;
-  padding: 10px 20px;
-  margin: 0 30px;
+  padding: 0.5em 10px;
+  margin: 0 1em;
 
-  .head {
+  mat-card-header {
     display: flex;
-    justify-content: space-between;
-    .title {
+    width: 100%;
+    mat-card-title {
       font-size: $text-size;
       font-weight: 500;
     }
-    .numberOftodo{
-        background-color: lightblue;
-        width: 20px;
-        height: 20px;
-        
+    mat-card-subtitle {
+      background-color: lightblue;
+      height: 20px;
+    }
+  }
+  mat-card-content {
+    // border: 1px solid blue;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .toggleBtn {
+      width: 100%;
+      background-color: $card-icon;
+      border: none;
+      height: 2em;
+      cursor: pointer;      
+      border-radius: 4px;
+      color: $text;
+    }
+    .toggleBtn:hover {
+      background-color: $card-icon-hover;
+      color: $text-hover;
+    }
+    .toggleBtn:active {
+      background-color: $card-icon-active;
+    }
+
+    .addTodo{
+      display: flex;
+      flex-direction: column;
+    }
+    textarea {
+      height: 3em;
+      border: none;
+      border-radius: 4px;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      resize: vertical;
+      background-color: white;
+      padding: 5px;
+    }
+    .actions{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5px;
+    }
+    
+    #closeAdd {
+      width: fit-content;
+      color: $text;
+      padding: 0 5px;
+      border: none;
+      border-radius: 4px;
+      background-color: $card-prime;
+      cursor: pointer;
+    }
+    #closeAdd:hover{
+      color: $text-hover;
+    }
+    #addNote {
+      cursor: pointer;
+      width: fit-content;
+      padding: 0 5px;
+      border: none;
+      border-radius: 4px;
+      background-color: #7D9D9C;
+    }
+    #addNote:hover{
+      background-color: #576F72;
+    }
+    #addNote:active{
+      background-color: $card-icon-active;
     }
   }
 }

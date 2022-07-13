@@ -1,6 +1,36 @@
-<div class="todo" *ngFor="let todo of todoLists">
-    <div class="head">
-        <span class="title">{{ todo.title }}</span>
-        <div class="numberOftodo"> {{todo.numberOfTodo}} </div>
+<mat-card
+  *ngFor="let todoList of todoLists"
+  cdkDropList
+  (cdkDropListDropped)="drop($event)"
+>
+  <mat-card-header>
+    <mat-card-title>{{ todoList.title }}</mat-card-title>
+
+    <!-- <mat-card-subtitle>{{ todo.numberOfTodo }}</mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content>
+    <app-todo *ngIf="todoList.list_id == 2" cdkDrag></app-todo>
+    <button
+      class="toggleBtn"
+      *ngIf="!toggleAddNote || state != todoList.list_id"
+      (click)="addNote(todoList.list_id)"
+    >
+      + Add note
+    </button>
+    <div class="addTodo" *ngIf="toggleAddNote && todoList.list_id == state">
+      <textarea type="text" placeholder="add title..."></textarea>
+      <div class="actions">
+        <button id="addNote">Add Note</button>
+        <button id="closeAdd" (click)="addNote(todoList.list_id)">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
     </div>
-</div>
+    <div *ngFor="let item of todoList.id | keyvalue">
+      <!-- {{ item.key }}:{{ item.value }} -->
+      <div *ngFor="let item of item.value | keyvalue">
+        <p *ngIf="item.key =='title' ">{{item.value}}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
