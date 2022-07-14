@@ -19,7 +19,8 @@ import { TodoListComponent } from './modules/shared/todo-list/todo-list.componen
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { TodoComponent } from './modules/shared/todo/todo.component';
 import {MatCardModule} from '@angular/material/card';
-
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,9 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     DragDropModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
